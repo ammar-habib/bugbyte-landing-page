@@ -13,7 +13,7 @@
     <meta name="author" content="Ammar-Habib">
     <meta name="keywords" content="landing-page, home-page">
 
-    <title>Bog Byte Studio</title>
+    <title>BugByte Studio</title>
 
     <!--CSS -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -28,16 +28,16 @@
 </head>
 <body>
 <div class="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="img-fluid header-logo"/>
+        </a>
+        <span class="navbar-text mr-auto">Where Creativity Never Ends</span>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" class="img-fluid header-logo"/>
-            </a>
-            <span class="navbar-text mr-auto">Where Creativity Never Ends</span>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -56,20 +56,69 @@
         </div>
     </nav>
 
-    <section class="common-section slider-section" style="background: url('img/red-bg.png') no-repeat;">
+    <section class="common-section slider-section" style="background: url('img/slider.png') no-repeat;">
         <div class="container">
-            <div class="row align-content-center">
-                <div class="col-xl-4"></div>
-                <div class="col-xl-4"></div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <h1 class="slider-heading">Creative,</h1>
+                        <p class="lead">We are BugByte Studio<sub>----------------------------------------</sub></p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="slider-heading">Creative,</h1>
+                        <p class="lead">We are BugByte Studio<sub>----------------------------------------</sub></p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="slider-heading">Creative,</h1>
+                        <p class="lead">We are BugByte Studio<sub>----------------------------------------</sub></p>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <!--<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">-->
+                    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Previous</span>-->
+                    <!--</a>-->
+                    <!--<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">-->
+                    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Next</span>-->
+                    <!--</a>-->
+                    <a href="#carouselExampleIndicators" class="indicators active" role="button" data-slide="prev">
+                        <i class="fa fa-caret-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#carouselExampleIndicators" class="indicators" role="button" data-slide="next">
+                        <i class="fa fa-caret-right"></i>
+                        <span class="sr-only">next</span>
+                    </a>
+                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+                </ol>
             </div>
+            <span class="num"><span class="current-num"></span>/<sub class="total-num"></sub></span>
         </div>
     </section>
 
-    <section class="common-section about-section" style="background: url('img/red-bg.png') no-repeat;">
+    <section class="common-section about-section" style="background: #f5f9fb url('img/red-bg.png') no-repeat;">
         <div class="container">
-            <div class="row align-content-center">
-                <div class="col-xl-4"></div>
-                <div class="col-xl-4"></div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-center">
+                    <div class="heading-section mb-4">
+                        <h2 class="text-white mb-0">Build your future with<br>BugByte Studio</h2>
+                        <hr class="yellow-hr float-left">
+                        <div class="clearfix"></div>
+                    </div>
+                    <p class="text-white">Founded in 2015, BugByte Studio is a technology group that strives to produce
+                        high-quality mobile
+                        apps & games. Our team of talented
+                        designers, game artists, video animators, writers & developers
+                        tirelessly work to produce brilliant games that you can enjoy in your free time. We continuously
+                        work on latest trends & experiement new ideas to present you an array of casual, and simulating
+                        games.
+                        We design & develop to keep you happy</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-center people-img-div">
+                    <img src="img/people.png" class="img-fluid">
+                </div>
             </div>
         </div>
     </section>
@@ -89,21 +138,40 @@
                 ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
             </p>
             <div class="row">
-                <div class="col-xl-8">
-                    <img src="img/p-img1.jpg" class="img-fluid p-img" alt="...">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="p-img-div">
+                        <span class="badge badge-primary tag">New</span>
+                        <img src="img/p-img1.jpg" class="img-fluid p-img" alt="...">
+                    </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                     <img src="img/p-img2.jpg" class="img-fluid p-img" alt="...">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                     <img src="img/p-img3.jpg" class="img-fluid p-img" alt="...">
                 </div>
-                <div class="col-xl-4">
-                    <img src="img/p-img2.jpg" class="img-fluid p-img" alt="...">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 p-download-div-order">
+                    <div class="p-download-div shadow-lg">
+                        <div class="icon-div">
+                            <img src="img/p-img5.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <p class="lead">Egg Catcher</p>
+                        <div class="download-game-des">
+                            <p>It's an addictive chicken game in which you have to catch eggs
+                                dropping from the tree. The dancing chickens have laid eggs, so save the life of
+                                eggs </p>
+                        </div>
+                        <div class="mb-2">
+                            <button class="btn btn-primary"><i class="fa fa-phone fa-lg mr-1"></i>App Store</button>
+                        </div>
+                        <div class="mb-2">
+                            <button class="btn btn-outline-info"><i class="fa fa-play fa-lg mr-1"></i>Google Play
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                     <img src="img/p-img4.jpg" class="img-fluid p-img" alt="...">
                 </div>
             </div>
@@ -141,7 +209,7 @@
     </section>
 
 
-    <section class="common-section subscribe-section" style="background: url('img/blue-bg.png') no-repeat">
+    <section class="common-section subscribe-section" style="background: #f5f9fb url('img/blue-bg.png') no-repeat">
         <div class="container">
             <div class="joinus-img-div">
                 <img src="img/join-us.png" class="img-fluid" alt=""/>
@@ -153,10 +221,10 @@
             </div>
             <form class="col-xl-8 col-lg-8 col-md-10 col-sm-12 m-auto">
                 <div class="form-row">
-                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
                         <input type="email" class="form-control sub-form-control" placeholder="Enter Email address">
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                         <button type="submit" class="btn btn-warning btn-block">Subscribe</button>
                     </div>
                 </div>
@@ -167,7 +235,7 @@
     <section class="common-section contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
                     <button class="btn btn-outline-secondary contact-btn">Contact</button>
                     <div class="heading-section mb-3">
                         <h2>Interested in<br/>working with us?</h2>
@@ -195,7 +263,7 @@
                         <div class="col-10">www.bugbytestudio.com</div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12">
                     <div class="contactfrom-wrapper">
                         <div class="border-one">
                             <div class="border-two">
@@ -229,13 +297,13 @@
         </div>
     </section>
 
-    <footer class="footer-section" style="background: url('img/white-bg.png') no-repeat;">
+    <footer class="footer-section" style="background: #f5f9fb url('img/white-bg.png') no-repeat;">
         <div class="container">
             <div class="row align-content-center justify-content-center first-row">
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-12">
                     <img src="img/footer-logo.png" class="img-fluid footer-img">
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-center">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 align-self-center">
                     <p>© 2015 - 2019 BugByte Studio. All Rights Reserved.</p>
                     <div class="d-flex-inline">
                         <a href="#">Privacy Policy </a>
@@ -243,7 +311,7 @@
                         <a href="#">Terms and Conditions</a>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 align-self-center">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item"><a href="#" class="social-icon fb"><i class="fa fa-facebook-f"></i></a>
                         </li>
