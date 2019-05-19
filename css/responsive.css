@@ -1,29 +1,137 @@
-
-
-
 /*Large devices (desktops, less than 1200px)*/
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
+    .slider-section {
+        min-height: 500px;
+    }
 
+    .slider-section .carousel-indicators {
+        top: 280px;
+    }
+
+    .about-section {
+        min-height: 760px;
+        margin-top: -310px;
+    }
+
+    .num {
+        bottom: 0;
+    }
+
+    .p-download-div {
+        height: 485px;
+    }
+
+    .download-game-des {
+        height: 120px;
+    }
 }
-
 
 /*Medium devices (tablets, less than 992px)*/
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+    }
 
+    .people-img-div {
+        display: none;
+    }
+    .slider-section {
+        min-height: 380px;
+    }
+
+    .slider-section .carousel-indicators {
+        top: 195px;
+    }
+    .slider-heading{
+        font-size: 70px;
+    }
+    .about-section {
+        min-height: 600px;
+        margin-top: -260px;
+    }
+    .about-section .row {
+        margin-top: 80px;
+    }
+    .num {
+        bottom: -10px;
+    }
+    .p-download-div-order {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .subscribe-section{
+        min-height: 400px;
+    }
+    .joinus-img-div{
+        top: -70px;
+        right: -300px;
+    }
+    .footer-section{
+        min-height: 200px;
+    }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
 
-@media (max-width: 767px){
-
+@media (max-width: 767px) {
+    .navbar-light .navbar-text{
+        display: none;
+    }
+    .slider-heading {
+        font-size: 40px;
+    }
+    .slider-section {
+        min-height: 180px;
+    }
+    .slider-section .lead {
+        font-size: 15px;
+        color: #ffee58;
+    }
+    h2, .h2 {
+        font-size: 20px;
+    }
+    .num {
+        font-size: 30px;
+        margin-left: 0;
+    }
+    .slider-section .carousel-indicators{
+        display: none;
+    }
+    .about-section {
+        min-height: 480px;
+        margin-top: -160px;
+    }
+    .joinus-img-div{
+        display: none;
+    }
+    .testimonial-card{
+        min-height: auto;
+        background: none !important;
+    }
+    .subscribe-section .container{
+        margin-top: -20px;
+    }
+    .sub-form-control{
+        margin-bottom: 10px;
+    }
+    .common-section {
+        margin-bottom: 50px;
+    }
+    .footer-section .first-row {
+        margin-top: 60px;
+    }
+    .footer-section .col-sm-12{
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 
-@media (max-width: 575px){
-    
+@media (max-width: 575px) {
+
 }
 
 
