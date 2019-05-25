@@ -441,6 +441,11 @@ button.bg-primary:focus {
     position: relative;
     z-index: 2;
 }
+.navbar-light-fixed{
+    background: #ffffff;
+    z-index: 1130;
+    position: fixed;
+}
 
 .navbar-light .navbar-text {
     color: #657984;
@@ -807,7 +812,9 @@ button.bg-primary:focus {
 }
 
 /*-----------------contact-us-------------*/
-
+.contact-section, .our-game-section, .testimonial-section {
+    padding-top: 100px;
+}
 .contactfrom-wrapper {
     background: #fff;
     padding: 40px;
