@@ -430,6 +430,7 @@ button.bg-primary:focus {
 .header-logo {
     width: 60px;
     margin-right: 25px;
+    margin-left: 15px;
 }
 
 .navbar-brand {
