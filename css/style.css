@@ -85,7 +85,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h3, .h3 {
@@ -144,6 +144,7 @@ hr {
 .green-hr {
     border-top: 2px solid #2dbfd6;
 }
+
 .yellow-hr {
     border-top: 2px solid #ffee58;
 }
@@ -180,7 +181,7 @@ hr {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
+    border: 1.5px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -203,8 +204,8 @@ hr {
 }
 
 .btn-primary:hover {
-    color: #657984;
-    background-color: transparent;
+    color: #fff;
+    background-color: #657984;
     border-color: #657984;
 }
 
@@ -266,9 +267,9 @@ hr {
 }
 
 .btn-outline-info:hover {
-    color: #fff;
-    background-color: #657984;
+    color: #657984;
     border-color: #657984;
+    background: transparent;
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
@@ -291,6 +292,21 @@ hr {
     box-shadow: none;
 }
 
+.btn-outline-warning {
+    color: #ffee58;
+    border-color: #ffee58;
+}
+
+.btn-outline-warning:hover {
+    color: #fff;
+    background-color: #ffee58;
+    border-color: #ffee58;
+}
+
+.btn-outline-warning:focus, .btn-outline-warning.focus {
+    box-shadow: none;
+}
+
 .btn-secondary {
     color: #fff;
     background-color: #2dbfd6;
@@ -300,7 +316,7 @@ hr {
 .btn-secondary:hover {
     color: #2dbfd6;
     background-color: transparent;
-    border-color: #0062cc;
+    border-color: #2dbfd6;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -387,18 +403,49 @@ button.bg-primary:focus {
 .fa-star {
     color: #feae24;
 }
-.badge-primary{
+
+.badge-primary {
     background: #ff5733;
 }
+
+.top-two-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -85px;
+    padding-top: 20px;
+}
+
+.top-two-section:after {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    content: "";
+    background-color: #f5f9fb;
+}
+
 /*-------------------header------------------*/
 .header-logo {
     width: 60px;
-    margin-right: 15px;
+    margin-right: 25px;
+}
+
+.navbar-brand {
+    border-right: 1px solid #e8f1f6;
+    margin-right: 25px;
+}
+
+.navbar-light {
+    position: relative;
+    z-index: 2;
 }
 
 .navbar-light .navbar-text {
-    color: rgb(101, 121, 132);
-    font-weight: 500;
+    color: #657984;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .nav-item {
@@ -407,21 +454,23 @@ button.bg-primary:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(101, 121, 132);
+    color: #29485a;
     padding-right: 0 !important;
     padding-left: 0 !important;
     padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(101, 121, 132);
+    color: #29485a;
     border-bottom: 2px solid #ff5733;
 }
 
 /*-----------------slider section----------------*/
 
-.slider-section{
+.slider-section {
     min-height: 800px;
     position: relative;
     z-index: 1;
@@ -432,59 +481,78 @@ button.bg-primary:focus {
     align-items: center;
     background-position: center !important;
 }
-.slider-heading{
-    font-size: 130px;
+
+.slider-heading {
+    font-size: 150px;
     text-align: center;
     color: #ffffff;
+    font-weight: bold;
+    line-height: 100px;
 }
-.slider-section .lead{
-    font-size: 25px;
+
+.slider-subheading {
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.slider-section .lead {
+    font-size: 30px;
     color: #ffee58;
 }
-.slider-section .carousel-indicators{
+
+.slider-section .carousel-indicators {
     top: 420px;
     margin-right: 25%;
 }
-.indicators{
+
+.indicators {
     border: 2px solid #c7adaa;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 10px;
     background: #b08d85;
     opacity: 0.5;
     cursor: pointer;
 }
-.indicators .fa{
+
+.indicators .fa {
     color: #ffffff;
 }
-.indicators.active{
+
+.indicators.active {
     border: 2px solid #ffffff;
 }
-.indicators.active .fa{
+
+.indicators.active .fa {
     color: #ffee58;
 }
+
 .num {
     position: absolute;
     bottom: 25px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     color: #ffff;
-    margin-left: 160px;
+    margin-left: 170px;
 }
-.num sub{
+
+.num sub {
     font-size: 60%;
     margin-left: 8px;
     bottom: -.18rem;
+    font-weight: normal;
 }
 
 /*-----------------About section----------------*/
 
-.about-section{
+.about-section {
     min-height: 1000px;
     margin-top: -390px;
     display: flex;
@@ -493,28 +561,39 @@ button.bg-primary:focus {
     align-items: center;
     background-size: 100% 100% !important;
 }
-.about-section .row{
+
+.about-section .row {
     margin-top: 200px;
+}
+
+.about-section .about-des {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
 }
 
 /*------------------our game----------------*/
 .our-game-btn {
-    padding: 1px 20px;
+    padding: 1px 26px;
     margin-bottom: 10px;
     min-width: auto;
 }
 
 .game-des {
-    margin-bottom: 40px !important;
+    margin-bottom: 70px !important;
+    font-size: 17px;
 }
+
 .p-img {
     border-radius: 15px;
     margin-bottom: 30px;
 }
-.p-img-div{
+
+.p-img-div {
     position: relative;
 }
-.p-img-div .tag{
+
+.p-img-div .tag {
     font-size: 14px;
     position: absolute;
     top: 15px;
@@ -524,14 +603,22 @@ button.bg-primary:focus {
     min-width: 50px;
     padding: 5px 18px;
 }
-.p-download-div{
+
+.p-download-div {
     background: #ffffff;
     border-radius: 15px;
-    height: 585px;
+    height: 605px;
     margin-bottom: 15px;
     text-align: center;
     padding: 30px;
 }
+
+.p-download-div .lead {
+    font-weight: 600;
+    color: #ff5733;
+    font-size: 22px;
+}
+
 .icon-div {
     margin-bottom: 20px;
 }
@@ -540,6 +627,87 @@ button.bg-primary:focus {
     height: 210px;
     overflow: hidden;
 }
+
+.download-btn-icon {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.app-download-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 160px;
+    height: 45px;
+}
+
+#gamesIndicators .carousel-inner {
+    /*overflow: unset;*/
+}
+
+.games-bottom-indicators {
+    align-items: center;
+}
+
+.games-bottom-indicators .indicators-num {
+    font-size: 20px;
+    color: #cad8df;
+    font-weight: 600;
+}
+
+.games-bottom-indicators img {
+    position: relative;
+    top: -2px;
+}
+
+.pre-indicators:hover .indicators-num, .nxt-indicators:hover .indicators-num {
+    color: #29485a;
+}
+
+.games-bottom-indicators .arrow-dotted-active {
+    display: none;
+}
+
+.pre-indicators .arrow-dotted {
+    transform: rotate(180deg);
+}
+
+.games-bottom-indicators .pre-indicators {
+    margin-right: 0;
+}
+
+.games-bottom-indicators .pre-indicators img {
+    top: -4px;
+}
+
+.games-bottom-indicators .nxt-indicators:hover .arrow-dotted-active {
+    transform: rotate(180deg);
+}
+
+.pre-indicators .arrow-dotted-active, .nxt-indicators .arrow-dotted-active {
+    display: none;
+}
+
+.pre-indicators:hover .arrow-dotted-active, .nxt-indicators:hover .arrow-dotted-active {
+    display: inline-block;
+}
+
+.pre-indicators:hover .arrow-dotted, .nxt-indicators:hover .arrow-dotted {
+    display: none;
+}
+
+.indicators-divider {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #e8f1f6;
+    height: 0;
+    vertical-align: middle;
+    background: #e8f1f6;
+    margin: 0 20px;
+}
+
 /*-------------testimonial section-----------*/
 
 .testimonial-card {
@@ -559,13 +727,58 @@ button.bg-primary:focus {
     height: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.player-name {
+    color: #cad8df;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.bottom-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    align-content: center;
+}
+
+.pre-indicators .big-arrow, .nxt-indicators .big-arrow {
+    display: none;
+}
+
+.pre-indicators:hover .big-arrow, .nxt-indicators:hover .big-arrow {
+    display: inline-block;
+}
+
+.pre-indicators:hover .small-arrow, .nxt-indicators:hover .small-arrow {
+    display: none;
+}
+
+.pre-indicators {
+    margin-right: 15px;
+}
+
+.pre-indicators .big-arrow {
+    transform: rotate(180deg);
 }
 
 /*-------------subscribe section-----------*/
 
 .subscribe-section {
     position: relative;
-    min-height: 600px;
+    min-height: 630px;
     background-size: cover !important;
     display: flex;
     flex-direction: column;
@@ -576,7 +789,7 @@ button.bg-primary:focus {
 .joinus-img-div {
     position: absolute;
     z-index: 1;
-    top: -30px;
+    top: 50px;
     left: 0;
     right: -370px;
     margin: 0 auto;
@@ -589,16 +802,20 @@ button.bg-primary:focus {
     border-radius: 25px;
 }
 
+.subscribe-section .heading-section {
+    margin-top: 70px;
+}
+
 /*-----------------contact-us-------------*/
 
 .contactfrom-wrapper {
     background: #fff;
-    padding: 2px;
-    border-radius: 20px;
+    padding: 40px;
+    border-radius: 10px;
 }
 
 .contact-btn {
-    padding: 1px 20px;
+    padding: 1px 26px;
     margin-bottom: 10px;
     min-width: auto;
 }
@@ -613,7 +830,9 @@ button.bg-primary:focus {
 }
 
 .contactfrom-wrapper label {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 18px;
+    color: #546d7b;
 }
 
 .contactfrom-wrapper .form-control:focus {
@@ -639,6 +858,10 @@ button.bg-primary:focus {
     padding: 40px 30px;
 }
 
+.contactfrom-wrapper .sub-heading {
+    font-size: 17px;
+}
+
 /*--------------footer section---------------*/
 .footer-section {
     min-height: 300px;
@@ -648,13 +871,16 @@ button.bg-primary:focus {
     justify-content: center;
     align-items: center;
 }
-.footer-section .first-row{
+
+.footer-section .first-row {
     margin-top: 90px;
 }
+
 .footer-img {
     width: 150px;
 }
-.social-icon{
+
+.social-icon {
     padding: 8px 6px;
     border-radius: 30px;
     display: inline-block;
@@ -662,25 +888,32 @@ button.bg-primary:focus {
     text-align: center;
     color: #ffffff;
 }
-.social-icon:hover{
+
+.social-icon:hover {
     background: inherit;
     color: #ffffff;
     border: 0;
 }
-.social-icon.fb{
+
+.social-icon.fb {
     background: #4e71a8;
 }
-.social-icon.tw{
+
+.social-icon.tw {
     background: #d2f1fb;
 }
-.social-icon.linkedin{
+
+.social-icon.linkedin {
     background: #d0e7ef;
 }
-.social-icon.instagram{
+
+.social-icon.instagram {
     background: #dadada;
-}.social-icon.youtube{
-     background: #f4d7d7;
- }
+}
+
+.social-icon.youtube {
+    background: #f4d7d7;
+}
 
 
 
