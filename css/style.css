@@ -85,7 +85,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 40px;
+    font-size: 54px;
 }
 
 h3, .h3 {
@@ -103,7 +103,9 @@ h5, .h5 {
 h6, .h6 {
     font-size: 1rem;
 }
-
+P{
+    font-size: 21px;
+}
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
@@ -137,8 +139,8 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 2px solid #ff5733;
-    width: 50px;
+    border-top: 3px solid #ff5733;
+    width: 75px;
 }
 
 .green-hr {
@@ -183,12 +185,13 @@ hr {
     user-select: none;
     border: 1.5px solid transparent;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: 24px;
     line-height: 1.5;
     border-radius: 25px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     text-transform: uppercase;
-    min-width: 140px;
+    min-width: 200px;
+    height: 50px;
 }
 
 .btn-link {
@@ -411,8 +414,8 @@ button.bg-primary:focus {
 .top-two-section {
     position: relative;
     z-index: 1;
-    margin-top: -85px;
-    padding-top: 20px;
+    margin-top: -110px;
+    padding-top: 30px;
 }
 
 .top-two-section:after {
@@ -428,7 +431,7 @@ button.bg-primary:focus {
 
 /*-------------------header------------------*/
 .header-logo {
-    width: 60px;
+    /*width: 60px;*/
     margin-right: 25px;
     margin-left: 15px;
 }
@@ -442,7 +445,8 @@ button.bg-primary:focus {
     position: relative;
     z-index: 2;
 }
-.navbar-light-fixed{
+
+.navbar-light-fixed {
     background: #ffffff;
     z-index: 1130;
     position: fixed;
@@ -450,8 +454,9 @@ button.bg-primary:focus {
 
 .navbar-light .navbar-text {
     color: #657984;
+    font-family: "Barlow Condensed";
+    font-size: 24px;
     font-weight: 600;
-    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .nav-item {
@@ -464,8 +469,9 @@ button.bg-primary:focus {
     padding-right: 0 !important;
     padding-left: 0 !important;
     padding-bottom: 5px;
+    font-family: "Barlow Condensed";
+    font-size: 24px;
     font-weight: 600;
-    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -477,7 +483,7 @@ button.bg-primary:focus {
 /*-----------------slider section----------------*/
 
 .slider-section {
-    min-height: 800px;
+    min-height: 1015px;
     position: relative;
     z-index: 1;
     background-size: contain !important;
@@ -489,34 +495,35 @@ button.bg-primary:focus {
 }
 
 .slider-heading {
-    font-size: 150px;
+    font-size: 220px;
     text-align: center;
     color: #ffffff;
-    font-weight: bold;
-    line-height: 100px;
+    font-weight: 700;
+    line-height: 180px;
 }
 
 .slider-subheading {
-    font-size: 60px;
+    font-size: 81px;
+    font-weight: 600;
     text-align: center;
     color: #ffffff;
-    font-weight: 600;
 }
 
 .slider-section .lead {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 400;
     color: #ffee58;
 }
 
 .slider-section .carousel-indicators {
-    top: 420px;
+    top: 475px;
     margin-right: 25%;
 }
 
 .indicators {
     border: 2px solid #c7adaa;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     text-align: center;
     border-radius: 80px;
     display: flex;
@@ -543,14 +550,14 @@ button.bg-primary:focus {
 .num {
     position: absolute;
     bottom: 25px;
-    font-size: 60px;
+    font-size: 98px;
     font-weight: 600;
     color: #ffff;
     margin-left: 170px;
 }
 
 .num sub {
-    font-size: 60%;
+    font-size: 48px;
     margin-left: 8px;
     bottom: -.18rem;
     font-weight: normal;
@@ -559,8 +566,8 @@ button.bg-primary:focus {
 /*-----------------About section----------------*/
 
 .about-section {
-    min-height: 1000px;
-    margin-top: -390px;
+    min-height: 1545px;
+    margin-top: -580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,25 +576,76 @@ button.bg-primary:focus {
 }
 
 .about-section .row {
-    margin-top: 200px;
+    margin-top: 330px;
 }
 
 .about-section .about-des {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 300;
 }
 
 /*------------------our game----------------*/
+.circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.circle:before,
+.circle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+}
+
+
+.circle:before {
+    animation: ripple 2s linear infinite;
+}
+
+.circle:after {
+    animation: ripple 2s linear 1s infinite;
+}
+
+@keyframes ripple{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); opacity:1; }
+    100% { transform: scale(1.6); opacity:0; }
+}
+
+/* Text */
+.text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    margin: 0;
+    color: #F1492A;
+    position: relative;
+    left: 3px;
+}
 .our-game-btn {
     padding: 1px 26px;
     margin-bottom: 10px;
-    min-width: auto;
+    min-width: 172px;
+    height: 44px;
 }
 
 .game-des {
     margin-bottom: 70px !important;
-    font-size: 17px;
+    font-size: 24px;
 }
 
 .p-img {
@@ -600,14 +658,17 @@ button.bg-primary:focus {
 }
 
 .p-img-div .tag {
-    font-size: 14px;
     position: absolute;
     top: 15px;
     left: 15px;
-    text-transform: uppercase;
     border-radius: 25px;
-    min-width: 50px;
-    padding: 5px 18px;
+    padding: 8px 18px;
+    min-width: 102px;
+    height: 44px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
 }
 
 .p-download-div {
@@ -622,7 +683,7 @@ button.bg-primary:focus {
 .p-download-div .lead {
     font-weight: 600;
     color: #ff5733;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .icon-div {
@@ -632,6 +693,7 @@ button.bg-primary:focus {
 .download-game-des {
     height: 210px;
     overflow: hidden;
+    font-size: 22px;
 }
 
 .download-btn-icon {
@@ -645,8 +707,6 @@ button.bg-primary:focus {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    min-width: 160px;
-    height: 45px;
 }
 
 #gamesIndicators .carousel-inner {
@@ -658,14 +718,15 @@ button.bg-primary:focus {
 }
 
 .games-bottom-indicators .indicators-num {
-    font-size: 20px;
+    font-size: 30px;
     color: #cad8df;
-    font-weight: 600;
+    font-weight: 500;
+    margin: 0 5px;
 }
 
 .games-bottom-indicators img {
     position: relative;
-    top: -2px;
+    top: -5px;
 }
 
 .pre-indicators:hover .indicators-num, .nxt-indicators:hover .indicators-num {
@@ -685,7 +746,7 @@ button.bg-primary:focus {
 }
 
 .games-bottom-indicators .pre-indicators img {
-    top: -4px;
+    top: -7px;
 }
 
 .games-bottom-indicators .nxt-indicators:hover .arrow-dotted-active {
@@ -717,7 +778,7 @@ button.bg-primary:focus {
 /*-------------testimonial section-----------*/
 
 .testimonial-card {
-    min-height: 500px;
+    min-height: 656px;
     background-size: contain !important;
     display: flex;
     flex-direction: column;
@@ -730,17 +791,19 @@ button.bg-primary:focus {
 }
 
 .testimonial-des {
-    height: 120px;
+    height: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .player-name {
+    font-size: 24px;
     color: #cad8df;
     font-weight: 600;
     margin-bottom: 0;
+    margin-top: 40px;
 }
 
 .bottom-indicators {
@@ -784,28 +847,32 @@ button.bg-primary:focus {
 
 .subscribe-section {
     position: relative;
-    min-height: 630px;
+    min-height: 690px;
     background-size: cover !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.subscribe-section .lead{
+    font-size: 26px;
+}
 
 .joinus-img-div {
     position: absolute;
     z-index: 1;
-    top: 50px;
+    top: 0;
     left: 0;
     right: -370px;
     margin: 0 auto;
     text-align: center;
-    width: 400px;
+    width: 617px;
+    height: 216px;
 }
-
 .sub-form-control {
     border-color: transparent;
     border-radius: 25px;
+    height: 50px;
 }
 
 .subscribe-section .heading-section {
@@ -816,6 +883,7 @@ button.bg-primary:focus {
 .contact-section, .our-game-section, .testimonial-section {
     padding-top: 100px;
 }
+
 .contactfrom-wrapper {
     background: #fff;
     padding: 40px;
@@ -825,7 +893,8 @@ button.bg-primary:focus {
 .contact-btn {
     padding: 1px 26px;
     margin-bottom: 10px;
-    min-width: auto;
+    min-width: 172px;
+    height: 44px;
 }
 
 .contactfrom-wrapper .form-control {
@@ -835,11 +904,13 @@ button.bg-primary:focus {
     border-bottom: 2px solid #e8f1f6;
     border-radius: 0;
     padding: 0.375rem 0;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .contactfrom-wrapper label {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 24px;
     color: #546d7b;
 }
 
@@ -867,9 +938,12 @@ button.bg-primary:focus {
 }
 
 .contactfrom-wrapper .sub-heading {
-    font-size: 17px;
+    font-size: 26px;
 }
-
+.address-content{
+    font-size: 21px;
+    font-weight: 400;
+}
 /*--------------footer section---------------*/
 .footer-section {
     min-height: 300px;
@@ -878,6 +952,12 @@ button.bg-primary:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.footer-section .list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}
+.footer-links{
+    font-size: 22px;
 }
 
 .footer-section .first-row {
@@ -889,12 +969,14 @@ button.bg-primary:focus {
 }
 
 .social-icon {
-    padding: 8px 6px;
+    padding: 6px 6px;
     border-radius: 30px;
     display: inline-block;
-    width: 35px;
+    width: 48px;
     text-align: center;
     color: #ffffff;
+    height: 48px;
+    font-size: 30px;
 }
 
 .social-icon:hover {

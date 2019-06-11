@@ -1,3 +1,4 @@
+new WOW().init();
 // Select all links with hashes
 $('a[href="#home"],a[href="#our-story"],a[href="#games"],a[href="#contact"]')
 // Remove links that don't actually link to anything
@@ -36,6 +37,27 @@ $('a[href="#home"],a[href="#our-story"],a[href="#games"],a[href="#contact"]')
         }
     });
 
+
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //		$('nav').fadeIn("fast");
+    //} else {
+    //		$('nav').fadeOut("fast");
+    //}
+
+    // Assign active class to nav links while scolling
+    $('#home, #our-story ,#games, #contact').each(function(i) {
+        if ($(this).position().top <= scrollDistance) {
+            $('.nav-item.active').removeClass('active');
+            $('.nav-item').eq(i).addClass('active');
+        }
+    });
+}).scroll();
+
 $(".nav .nav-item").on("click", function(){
     $(".nav").find(".active").removeClass("active");
     $(this).addClass("active");
@@ -52,7 +74,6 @@ $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
     // $('.current-num').text(currentIndex);
     // $('.total-num').text(totalItems);
 });
-
 
 
 $(window).scroll(function () {
