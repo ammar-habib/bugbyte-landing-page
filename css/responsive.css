@@ -1,12 +1,66 @@
 /*Large devices (desktops, less than 1200px)*/
 
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1679px) {
+    #carouselExampleIndicators img {
+        max-width: 95%;
+    }
+
+    #carouselExampleIndicators .carousel-item {
+        text-align: center;
+    }
+
+    .slider-section {
+        min-height: 1000px;
+    }
+
+    .num {
+        bottom: -60px;
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1279px) {
+    .top-two-section {
+        margin-top: -125px;
+    }
+
+    .slider-section {
+        min-height: 790px;
+    }
+
+    .people-img-div img {
+        max-width: 90%;
+    }
+
+    .about-section {
+        margin-top: -550px;
+    }
+
+    .about-section .row {
+        margin-top: 250px;
+    }
+}
+
 @media (max-width: 1199px) {
     .slider-section {
         min-height: 500px;
     }
 
+    .indicators {
+        width: 50px;
+        height: 50px;
+    }
+
     .slider-section .carousel-indicators {
-        top: 280px;
+        bottom: 0;
     }
 
     .about-section {
@@ -16,6 +70,7 @@
 
     .num {
         bottom: 0;
+        display: none;
     }
 
     .p-download-div {
@@ -23,14 +78,41 @@
     }
 
     .download-game-des {
-        height: 120px;
+        height: 75px;
     }
-    .navbar-light{
+
+    .navbar-light {
         background: #ffffff;
     }
-    .top-two-section{
+
+    .top-two-section {
         padding-top: 0;
         margin-top: 0;
+    }
+
+    .navbar-light .navbar-text, .navbar-light .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .people-img-div {
+        display: none;
+    }
+
+    .about-section .row {
+        margin-top: 0;
+    }
+
+    .app-download-btn {
+        height: 50px;
+    }
+
+    .testimonial-card {
+        min-height: 530px
+    }
+
+    .testimonial-des p, .download-game-des p {
+        font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -44,141 +126,319 @@
     .people-img-div {
         display: none;
     }
+
     .slider-section {
         min-height: 380px;
     }
 
     .slider-section .carousel-indicators {
-        top: 195px;
+        bottom: 0;
     }
-    .slider-heading{
+
+    .slider-heading {
         font-size: 70px;
         line-height: 40px;
     }
-    .slider-subheading{
+
+    .slider-subheading {
         font-size: 40px;
     }
-    .slider-section .lead{
+
+    .slider-section .lead {
         font-size: 25px;
     }
+
     .about-section {
         min-height: 600px;
         margin-top: -260px;
     }
+
     .about-section .row {
         margin-top: 80px;
     }
+
     .num {
         bottom: -10px;
         font-size: 45px;
     }
+
     .p-download-div-order {
         -ms-flex-order: 1;
         order: 1;
     }
-    .subscribe-section{
+
+    .subscribe-section {
         min-height: 400px;
     }
-    .joinus-img-div{
+
+    .joinus-img-div {
         top: -15px;
         right: -300px;
+        width: 400px;
     }
-    .footer-section{
+
+    .footer-section {
         min-height: 200px;
+        text-align: center;
     }
-    .indicators{
+
+    .footer-section .text-right {
+        text-align: center !important;
+    }
+
+    .footer-section .col-md-12 {
+        margin-bottom: 15px;
+    }
+
+    .footer-section .mobile-bottom {
+        order: 1;
+    }
+
+    .indicators {
         width: 45px;
         height: 45px;
     }
+
     .p-download-div {
         height: auto;
     }
-    .testimonial-card{
+
+    .testimonial-card {
         min-height: 450px;
+    }
+
+    .game-des, .about-section .about-des {
+        font-size: 20px;
+    }
+
+    h2, .h2 {
+        font-size: 40px;
+    }
+
+    .joinus-img-div img {
+        max-width: 100%;
+    }
+
+    .testimonial-des {
+        height: 150px;
+    }
+
+    .subscribe-section .heading-section {
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+
+    .contactfrom-wrapper {
+        margin-top: 80px;
+    }
+
+    .contact-section .container {
+        background-position: 0, bottom !important;
+    }
+
+    .sub-form-btn, .sub-form-control {
+        height: auto;
+    }
+
+    .header-logo {
+        width: 60px;
+        margin-left: 0;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
     }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
 
 @media (max-width: 767px) {
-    .navbar-light .navbar-text{
+    .navbar-light .navbar-text {
         display: none;
     }
+
     .slider-heading {
         font-size: 40px;
         line-height: 20px;
     }
-    .slider-subheading{
+
+    .slider-subheading {
         font-size: 30px;
     }
+
     .slider-section {
         min-height: 330px;
     }
+
     .slider-section .lead {
         font-size: 15px;
         color: #ffee58;
     }
+
     h2, .h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
+
+    .game-des, .about-section .about-des {
+        font-size: 18px;
+    }
+
     .num {
         font-size: 30px;
         margin-left: 30px;
         bottom: 0;
     }
-    .slider-section .carousel-indicators{
-        display: none;
+
+    .slider-section .carousel-indicators {
     }
+
     .about-section {
         min-height: 480px;
         margin-top: -160px;
     }
-    .joinus-img-div{
+
+    .joinus-img-div {
         display: none;
     }
-    .testimonial-card{
-        min-height: auto;
+
+    .testimonial-card {
+        min-height: 300px;
         background: none !important;
     }
-    .subscribe-section .container{
+
+    .subscribe-section .container {
         margin-top: -20px;
     }
-    .sub-form-control{
+
+    .sub-form-control {
         margin-bottom: 10px;
     }
+
     .common-section {
         margin-bottom: 50px;
     }
+
     .footer-section .first-row {
         margin-top: 60px;
     }
-    .footer-section .col-sm-12{
-        margin-bottom: 15px;
-        text-align: center;
+
+    .contact-btn, .our-game-btn {
+        min-width: 140px;
+        height: 34px;
     }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .download-game-des {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .about-section .row {
+        margin-top: 30px;
+    }
+
+    .game-des {
+        margin-bottom: 50px !important;
+        margin-top: 30px !important;
+    }
+
+    .p-img-div .tag {
+        padding: 4px 18px;
+        min-width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .testimonial-des p, .download-game-des p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .testimonial-des {
+        height: auto;
+    }
+
+    .subscribe-section {
+        background-size: cover !important;
+    }
+
+    .address-content {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .contactfrom-wrapper .sub-heading, .contactfrom-wrapper label {
+        font-size: 22px;
+    }
+
+    .contactfrom-wrapper .form-control, .sub-form-control {
+        font-size: 20px;
+    }
+
+    .subscribe-section .lead {
+        font-size: 22px;
+    }
+
+    .games-bottom-indicators {
+        bottom: -60px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .games-bottom-indicators .indicators-num{
+        display: none;
+    }
+    .games-bottom-indicators img{
+        top: 0;
+    }
+    .games-bottom-indicators .pre-indicators img {
+        top: -2px;
+    }
+    .contactfrom-wrapper{
+        padding: 15px;
+    }
+
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 
 @media (max-width: 575px) {
+    .indicators {
+        width: 30px;
+        height: 30px;
+    }
+    .about-section {
+        min-height: 620px;
+        background-size: cover !important;
+    }
     .slider-heading {
         font-size: 30px;
         line-height: 30px;
     }
-    .slider-subheading{
+
+    .slider-subheading {
         font-size: 22px;
     }
+
     .slider-section {
         min-height: 190px;
     }
-    .num{
+
+    .num {
         display: none;
     }
+
     .subscribe-section .container {
         margin-top: -70px;
     }
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
     .container {
         max-width: 1170px;
     }

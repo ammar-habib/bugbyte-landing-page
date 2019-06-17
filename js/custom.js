@@ -76,14 +76,16 @@ $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
 });
 
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() >= 300) {
-        $('nav').addClass('fixed-top navbar-light-fixed');
-    }
-    else {
-        $('nav').removeClass('fixed-top navbar-light-fixed');
-    }
-});
+// $(window).scroll(function () {
+//     if ($(window).scrollTop() >= 300) {
+//         $('nav').addClass('fixed-top navbar-light-fixed');
+//         $('body').addClass('top-padding');
+//     }
+//     else {
+//         $('nav').removeClass('fixed-top navbar-light-fixed');
+//         $('body').removeClass('top-padding');
+//     }
+// });
 
 // This triggers after each slide change
 

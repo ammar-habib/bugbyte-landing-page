@@ -37,6 +37,10 @@ body {
     /*background-color: #ffffff;*/
     color: rgb(101, 121, 132);
     line-height: 1.15;
+    overflow-x: hidden;
+}
+.top-padding{
+    padding-top: 115px;
 }
 
 a {
@@ -288,7 +292,7 @@ hr {
 .btn-warning:hover {
     color: #ffee58 !important;
     background-color: transparent !important;
-    border-color: #b98c02 !important;
+    border-color: #ffee58 !important;
 }
 
 .btn-warning:focus, .btn-warning.focus {
@@ -414,7 +418,7 @@ button.bg-primary:focus {
 .top-two-section {
     position: relative;
     z-index: 1;
-    margin-top: -110px;
+    margin-top: -180px;
     padding-top: 30px;
 }
 
@@ -438,7 +442,7 @@ button.bg-primary:focus {
 
 .navbar-brand {
     border-right: 1px solid #e8f1f6;
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 .navbar-light {
@@ -455,13 +459,13 @@ button.bg-primary:focus {
 .navbar-light .navbar-text {
     color: #657984;
     font-family: "Barlow Condensed";
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .navbar-light .navbar-nav .nav-item {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+    padding-right: 23px !important;
+    padding-left: 23px !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -470,8 +474,9 @@ button.bg-primary:focus {
     padding-left: 0 !important;
     padding-bottom: 5px;
     font-family: "Barlow Condensed";
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -483,7 +488,7 @@ button.bg-primary:focus {
 /*-----------------slider section----------------*/
 
 .slider-section {
-    min-height: 1015px;
+    min-height: 1177px;
     position: relative;
     z-index: 1;
     background-size: contain !important;
@@ -516,8 +521,8 @@ button.bg-primary:focus {
 }
 
 .slider-section .carousel-indicators {
-    top: 475px;
-    margin-right: 25%;
+    margin-right: 27%;
+    bottom: 35px;
 }
 
 .indicators {
@@ -549,16 +554,16 @@ button.bg-primary:focus {
 
 .num {
     position: absolute;
-    bottom: 25px;
+    bottom: 0;
     font-size: 98px;
     font-weight: 600;
     color: #ffff;
-    margin-left: 170px;
+    margin-left: 400px;
 }
 
 .num sub {
-    font-size: 48px;
-    margin-left: 8px;
+    font-size: 50px;
+    margin-left: 15px;
     bottom: -.18rem;
     font-weight: normal;
 }
@@ -566,8 +571,8 @@ button.bg-primary:focus {
 /*-----------------About section----------------*/
 
 .about-section {
-    min-height: 1545px;
-    margin-top: -580px;
+    min-height: 1559px;
+    margin-top: -605px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -576,7 +581,7 @@ button.bg-primary:focus {
 }
 
 .about-section .row {
-    margin-top: 330px;
+    margin-top: 383px;
 }
 
 .about-section .about-des {
@@ -644,8 +649,9 @@ button.bg-primary:focus {
 }
 
 .game-des {
-    margin-bottom: 70px !important;
+    margin-bottom: 105px !important;
     font-size: 24px;
+    margin-top: 60px !important;
 }
 
 .p-img {
@@ -691,7 +697,7 @@ button.bg-primary:focus {
 }
 
 .download-game-des {
-    height: 210px;
+    height: 170px;
     overflow: hidden;
     font-size: 22px;
 }
@@ -707,6 +713,9 @@ button.bg-primary:focus {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    height: 60px;
+    min-width: 220px;
+    border-radius: 30px;
 }
 
 #gamesIndicators .carousel-inner {
@@ -799,7 +808,7 @@ button.bg-primary:focus {
 }
 
 .player-name {
-    font-size: 24px;
+    font-size: 24px !important;
     color: #cad8df;
     font-weight: 600;
     margin-bottom: 0;
@@ -842,13 +851,26 @@ button.bg-primary:focus {
 .pre-indicators .big-arrow {
     transform: rotate(180deg);
 }
+.games-bottom-indicators{
+    bottom: -130px;
+}
+.our-game-section{
+    margin-bottom: 245px;
+}
+.testimonial-des p {
+    font-size: 30px;
+    line-height: 30px;
+}
 
+.testimonial-card .heading-section {
+    margin-bottom: 40px;
+}
 /*-------------subscribe section-----------*/
 
 .subscribe-section {
     position: relative;
-    min-height: 690px;
-    background-size: cover !important;
+    min-height: 742px;
+    background-size: 100% 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -861,9 +883,9 @@ button.bg-primary:focus {
 .joinus-img-div {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 15px;
     left: 0;
-    right: -370px;
+    right: -520px;
     margin: 0 auto;
     text-align: center;
     width: 617px;
@@ -871,21 +893,42 @@ button.bg-primary:focus {
 }
 .sub-form-control {
     border-color: transparent;
-    border-radius: 25px;
-    height: 50px;
+    border-radius: 30px;
+    height: 60px;
+    padding: 6px 30px;
+    font-size: 22px;
 }
-
+.sub-form-btn{
+    border-radius: 30px;
+    height: 60px;
+}
 .subscribe-section .heading-section {
-    margin-top: 70px;
+    margin-top: 110px;
+    margin-bottom: 45px;
 }
 
 /*-----------------contact-us-------------*/
 .contact-section, .our-game-section, .testimonial-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
-
+.contact-section .container{
+    padding-top: 100px;
+    margin-top: -110px;
+    padding-bottom: 130px;
+}
+.contactfrom-bg-wrapper{
+    /*min-height: 970px;*/
+    /*padding-top: 110px;*/
+    /*margin-top: -100px;*/
+}
+.contactfrom-wrapper .form-group {
+    margin-bottom: 45px;
+}
+.contactfrom-wrapper .heading-section {
+    margin-bottom: 58px;
+}
 .contactfrom-wrapper {
-    background: #fff;
+    background-color: #fff;
     padding: 40px;
     border-radius: 10px;
 }
@@ -969,20 +1012,22 @@ button.bg-primary:focus {
 }
 
 .social-icon {
-    padding: 6px 6px;
+    padding: 9px 6px;
     border-radius: 30px;
     display: inline-block;
     width: 48px;
     text-align: center;
     color: #ffffff;
     height: 48px;
-    font-size: 30px;
+    font-size: 25px;
+    opacity: 0.4;
 }
 
 .social-icon:hover {
     background: inherit;
     color: #ffffff;
     border: 0;
+    opacity: 1;
 }
 
 .social-icon.fb {
@@ -990,21 +1035,53 @@ button.bg-primary:focus {
 }
 
 .social-icon.tw {
-    background: #d2f1fb;
+    background: #1cb7eb;
 }
 
 .social-icon.linkedin {
-    background: #d0e7ef;
+    background: #1686b0;
 }
 
 .social-icon.instagram {
-    background: #dadada;
+    background: #444444;
 }
 
 .social-icon.youtube {
-    background: #f4d7d7;
+    background: #ca3737;
+}
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
 }
 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    background: url(../img/color_dots.png) center center no-repeat;
+}
+
+.hero-bkg-animated {
+    background: url(../img/color_dots.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
 
 
 
