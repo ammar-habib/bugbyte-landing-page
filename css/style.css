@@ -544,11 +544,12 @@ button.bg-primary:focus {
     color: #ffffff;
 }
 
-.indicators.active {
+ .indicators:hover {
     border: 2px solid #ffffff;
+    opacity: 1;
 }
 
-.indicators.active .fa {
+ .indicators:hover .fa {
     color: #ffee58;
 }
 
@@ -1082,9 +1083,6 @@ button.bg-primary:focus {
     from { background-position: 0 0; }
     to { background-position: -400px 0; }
 }
-
-
-
 
 
 
