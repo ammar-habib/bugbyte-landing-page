@@ -1084,9 +1084,9 @@ button.bg-primary:focus {
     to { background-position: -400px 0; }
 }
 .carousel-item {
-    transition: -webkit-transform 1.5s ease-in-out;
-    transition: transform 1.5s ease-in-out;
-    transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
 
