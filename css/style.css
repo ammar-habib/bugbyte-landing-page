@@ -1076,12 +1076,17 @@ button.bg-primary:focus {
     margin: 0;
     text-align: center;
     box-sizing: border-box;
-    -webkit-animation: slide 20s linear infinite;
+    /*-webkit-animation: slide 20s linear infinite;*/
 }
 
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
     to { background-position: -400px 0; }
+}
+.carousel-item {
+    transition: -webkit-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
 }
 
 
